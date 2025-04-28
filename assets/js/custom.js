@@ -60,109 +60,9 @@ $(document).ready(function () {
         }, 600);
         return false;
     });
-    // Banner Slider with Thumbs
-    var bannerThumbnailSlider = new Swiper('.bannerThumbSlider .swiper', {
-        slidesPerView: 3,
-        spaceBetween: 10,
-        freeMode: true,
-        watchSlidesProgress: true,
-        pagination: false,
-        navigation: {
-            nextEl: '.bannerThumbSlider .swiper-button-next',
-            prevEl: '.bannerThumbSlider .swiper-button-prev',
-        },
-        breakpoints: {
-            318: {
-                slidesPerView: 2.3,
-                spaceBetween: 20,
-            },
-            767: {
-                slidesPerView: 3,
-            },
-        },
-    });
-
-    var bannerMainSlider = new Swiper('.bannerSlider .swiper', {
-        slidesPerView: 1,
-        loop: false,
-        // effect: 'fade',
-        pagination: false,
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-        },
-        navigation: {
-            nextEl: '.bannerThumbSlider .swiper-button-next',
-            prevEl: '.bannerThumbSlider .swiper-button-prev',
-        },
-        thumbs: {
-            swiper: bannerThumbnailSlider
-        }
-    });
-
-    // Service Slider
-    new Swiper('.service-slider-outer .swiper', {
-        slidesPerView: 4,
-        paginationClickable: true,
-        loop: true,
-        spaceBetween: 30,
-        slideToClickedSlide: true,
-        autoplay: {
-            delay: 4000,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: true,
-        },
-        pagination: {
-            el: '.service-slider-outer .swiper-pagination',
-            clickable: true,
-        },
-        breakpoints: {
-            318: {
-                slidesPerView: 1,
-                spaceBetween: 20,
-            },
-            992: {
-                slidesPerView: 3,
-            },
-            1280: {
-                slidesPerView: 4,
-            },
-        },
-    });
-    // Project Slider
-    new Swiper('.projectSliderOuter .swiper', {
-        slidesPerView: 2.5,
-        centeredSlides: true,
-        paginationClickable: true,
-        loop: true,
-        spaceBetween: 50,
-        slideToClickedSlide: true,
-        autoplay: {
-            delay: 4000,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: true,
-        },
-        pagination: {
-            el: '.projectSliderOuter .swiper-pagination',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: ".projectSliderOuter .swiper-button-next",
-            prevEl: ".projectSliderOuter .swiper-button-prev",
-        },
-        breakpoints: {
-            318: {
-                slidesPerView: 1,
-                spaceBetween: 20,
-            },
-            992: {
-                slidesPerView: 2.1,
-            },
-        },
-    });
     // Testimonial Slider
     new Swiper('.testimonialSlider .swiper', {
-        slidesPerView: 1,
+        slidesPerView: 2,
         loop: true,
         spaceBetween: 30,
         slideToClickedSlide: true,
@@ -171,9 +71,10 @@ $(document).ready(function () {
             disableOnInteraction: false,
             pauseOnMouseEnter: true,
         },
-        pagination: {
-            el: '.testimonialSlider .swiper-pagination',
-            clickable: true,
+        pagination: false,
+        navigation: {
+            nextEl: ".testimonialSliderNav .swiper-button-next",
+            prevEl: ".testimonialSliderNav .swiper-button-prev",
         },
         breakpoints: {
             318: {
@@ -185,8 +86,8 @@ $(document).ready(function () {
                 spaceBetween: 20,
             },
             992: {
-                slidesPerView: 1,
-                spaceBetween: 30,
+                slidesPerView: 2,
+                spaceBetween: 45,
             },
         },
     });
