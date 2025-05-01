@@ -1,4 +1,4 @@
-$(document).ready(function () {
+jQuery(document).ready(function ($) {
     // sticky_header
     $(function () {
         var shrinkHeader = 2;
