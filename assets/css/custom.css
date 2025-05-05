@@ -1547,7 +1547,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-family: var(--secondary-font);
 	font-size: 20px;
 	font-weight: 400;
-	line-height: 1.4;
+	line-height: 1.6;
 	color: var(--color-white);
 	max-width: 720px;
 	margin-bottom: 40px;
@@ -1584,15 +1584,16 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .faq_acrdn .accordion-item {
-	background-color: transparent;
+	background-color: #fff;
 	border: none;
-	border-bottom: 1px solid #E0E0E0;
+	border-bottom: 0;
 	margin: 0 0 30px;
 	border-radius: 0;
 	position: relative;
 	overflow: hidden;
-	padding: 0 0 30px;
+	padding: 0 0 0 25px;
 	border-radius: 15px;
+	box-shadow: 0px 4px 74px 1px #0000000F;
 	transition: all 0.4s ease-in-out;
 	counter-increment: faq-counter;
 }
@@ -1607,14 +1608,14 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .faq_acrdn .accordion-item .accordion-header .accordion-button {
 	font-family: var(--heading-font);
-	padding: 0 65px 0 0;
+	padding: 18px 65px 18px 0;
 	display: block;
 	width: 100%;
-	font-size: 31px;
+	font-size: 23px;
 	line-height: 1.4;
 	text-decoration: none !important;
-	color: #363636;
-	font-weight: 400;
+	color: #2D2D2D;
+	font-weight: 600;
 	position: relative;
 	text-align: left;
 	background-color: transparent;
@@ -1634,7 +1635,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	content: "\f107";
 	font-family: "Line Awesome Free";
 	position: absolute;
-	top: 8px;
+	top: 19px;
 	right: 20px;
 	width: 28px;
 	height: 28px;
@@ -1653,38 +1654,22 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .faq_acrdn .accordion-button.collapsed:after {
 	content: "\f107";
-	background: #4D4D4D;
-	top: 8px;
+	background: var(--primary-color);
 	transform: rotateX(0);
 }
 
 .faq_acrdn .accordion-body {
-	padding: 30px;
-	padding-bottom: 0;
+	padding: 0 0 30px;
 	padding-left: 0;
 	border-top: 0;
 	transition: 0.3s ease-in;
 }
 
 .faq_acrdn .accordion-body p {
-	color: #313131;
-	font-size: 19px;
+	color: #2F2F2F;
+	font-size: 21px;
 }
 
-.accordion-item:has(.accordion-button[aria-expanded="true"]) {
-	box-shadow: 0px 4px 54px 4px #0000000A;
-	background-color: #fff;
-	border-color: transparent;
-	padding-top: 30px;
-}
-
-.faq_acrdn .accordion-item .accordion-header .accordion-button[aria-expanded="true"] {
-	padding: 0 30px 0;
-}
-
-.accordion-item:has(.accordion-button[aria-expanded="true"]) .accordion-body {
-	padding-left: 30px;
-}
 
 /* accordion */
 .shortBanner {
@@ -2083,4 +2068,120 @@ input[type="number"]::-webkit-outer-spin-button {
 	padding: 30px 25px;
 	margin-bottom: -210px;
 
+}
+
+.serviceBannerWrapper {
+	padding: 280px 0 140px;
+}
+
+.serviceBannerWrapper .banner-content-outer {
+	max-width: 680px;
+	margin-left: 0;
+}
+
+.serviceBannerWrapper .banner-content-outer h1 {
+	font-size: 90px;
+}
+
+.ourServiceWrapper {
+	padding: 90px 0;
+}
+
+.ourServiceWrapper .section-headingHolder {
+	justify-content: space-between;
+}
+
+.ourServiceWrapper .section-heading h2 {
+	min-width: 515px;
+	max-width: 400px;
+	margin-top: -10px;
+}
+
+.ourServiceWrapper .section-heading p {
+	max-width: 470px;
+}
+
+.ourServiceWrapper .btnBlock .clBtnHolder .clBtnIcon {
+	border: 1px solid var(--primary-color);
+	background-color: var(--primary-color);
+	color: var(--color-white);
+}
+
+.ourServiceWrapper .whyUsRow {
+	max-width: 100%;
+	margin-top: 50px;
+}
+
+.ourServiceWrapper {
+	background-color: #F9F9F9;
+}
+
+.serviceTypesWrapper * {
+	color: var(--color-white) !important;
+}
+
+.serviceTypesWrapper .section-heading {
+	max-width: 590px;
+	margin-bottom: 50px;
+}
+
+.serviceTypesWrapper .listItem {
+	position: relative;
+	padding-left: 40px;
+	margin-bottom: 24px;
+}
+
+.serviceTypesWrapper .listItem::before {
+	content: "\f00c";
+	font-family: "Line Awesome Free";
+	position: absolute;
+	top: 2px;
+	left: 0;
+	font-size: 19px;
+	color: var(--color-white);
+	font-weight: 800;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 28px;
+	height: 28px;
+	background-color: var(--primary-color);
+	border-radius: 100%;
+}
+
+.serviceTypesWrapper .listItem h3 {
+	font-size: 21px;
+	font-weight: 600;
+	line-height: 1.4;
+	margin-bottom: 10px;
+}
+
+.serviceTypesWrapper .listItem p {
+	font-size: 16px;
+	line-height: 1.5;
+	max-width: 480px;
+}
+
+.roofignConsiderationsWrapper .roofignConsiderationsHeading {
+	padding-left: 60px;
+}
+
+.roofignConsiderationsWrapper .roofignConsiderationsHeading p:first-child {
+	font-weight: 500;
+}
+
+.whyHireProffesionial .row {
+	justify-content: flex-end;
+}
+
+.whyHireProffesionial.howItworksWrapper .section-heading {
+	max-width: 90%;
+}
+
+.faqWrapper {
+	background-color: #FFFFF1;
+}
+
+.faqWrapper .section-heading {
+	margin-bottom: 50px;
 }
