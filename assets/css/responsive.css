@@ -334,6 +334,39 @@
 	.sticky .header-social-links>a:not(:hover) {
 		color: #fff;
 	}
+
+	.ourServiceWrapper .section-headingHolder {
+		flex-direction: column;
+	}
+
+	.ourServiceWrapper .section-headingHolder .section-heading {
+		flex-direction: column;
+	}
+
+	.ourServiceWrapper .section-heading h2 {
+		min-width: 100%;
+		max-width: 100%;
+		margin-top: 0;
+	}
+
+	.ourServiceWrapper .section-heading p {
+		max-width: 100%;
+		margin-bottom: 25px;
+	}
+
+	.roofignConsiderationsPic img,
+	.faqPic img {
+		width: 100%;
+	}
+
+	.roofignConsiderationsWrapper .roofignConsiderationsHeading {
+		padding-left: 0;
+		margin-top: 35px;
+	}
+
+	.faqWrapper .section-heading {
+		margin-top: 35px;
+	}
 }
 
 @media (max-width: 767px) {
@@ -495,5 +528,30 @@
 		font-weight: 400;
 		font-size: 14px;
 		min-width: 150px;
+	}
+
+	.whyUsRow .col-md-6 {
+		padding: 0;
+	}
+
+	.ourServiceWrapper .whyUsRow {
+		margin: 0;
+		margin-top: 35px;
+	}
+
+	.ourServiceWrapper {
+		padding: 50px 0;
+	}
+
+	.faqWrapper .section-heading {
+		margin-bottom: 30px;
+	}
+
+	.faq_acrdn .accordion-item .accordion-header .accordion-button {
+		font-size: 19px;
+	}
+
+	.faq_acrdn .accordion-body p {
+		font-size: 16px;
 	}
 }
